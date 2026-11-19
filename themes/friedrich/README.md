@@ -1,16 +1,11 @@
 # friedrich
 
 A dual-identity theme for [Symfonium](https://symfonium.app/) (app version > v12): **indigo
-night, green day**. The dark scheme is deep indigo with soft periwinkle accents — quiet,
-legible, easy on the eyes at night. The light scheme is a green Material day scheme with deep
-green actions, pale green containers, and a teal tertiary. Both live in one file; the app's
-Theme mode decides which one you see.
-
-## Preview
-
-| Night | Day |
-| ----- | --- |
-| ![friedrich in dark mode](screenshots/dark.png) | ![friedrich in light mode](screenshots/light.png) |
+night, blue day**. The dark scheme is deep indigo with soft periwinkle accents — quiet,
+legible, easy on the eyes at night. The light scheme is a blue Material day scheme with
+sea-blue actions, pale sky containers, and a violet tertiary — sharing the night scheme's
+blue lineage for continuity across modes. Both live in one file; the app's Theme mode decides
+which one you see.
 
 ## Import
 
@@ -21,6 +16,12 @@ Theme mode decides which one you see.
 
 While evaluating the theme, turn off **Now playing color source** / dynamic artwork colors —
 they override theme colors on the playback screen.
+
+## Preview
+
+| Night | Day |
+| ----- | --- |
+| ![friedrich in dark mode](screenshots/dark.png) | ![friedrich in light mode](screenshots/light.png) |
 
 ## Palette
 
@@ -43,14 +44,14 @@ they override theme colors on the playback screen.
 
 | Hex | Role in the theme |
 | ------- | ----------------- |
-| `#f7fbf2` | Base surface (background) |
-| `#ffffff` → `#f1f5ec` → `#ebefe7` → `#e5e9e1` → `#e0e4db` | Surface ladder (lowest → highest) |
-| `#181d18` / `#424940` | Primary / secondary text |
-| `#727970` / `#c1c9be` | Borders / active-row fill |
-| `#36693e` | Green (deep) — logo, primary actions, play-overlay icon, separators |
-| `#b7f1b9` | Green (pale) — mix cards |
-| `#b8ccb5` | Green (mid) — search bar, selected chips, nav pill |
-| `#39656c` / `#bdeaf3` | Teal — tertiary accents, drag-and-drop controls |
+| `#f7f9ff` | Base surface (background) |
+| `#ffffff` → `#f1f4f9` → `#ebeef3` → `#e5e8ed` → `#e0e3e8` | Surface ladder (lowest → highest) |
+| `#181c20` / `#41474d` | Primary / secondary text |
+| `#72787e` / `#c1c7ce` | Borders / active-row fill |
+| `#28638a` | Sea blue — logo, primary actions, play-overlay icon, separators |
+| `#cae6ff` | Sky blue — mix cards |
+| `#b7c9d9` | Blue (mid) — search bar, selected chips, nav pill |
+| `#65587b` / `#ebdcff` | Violet — tertiary accents, drag-and-drop controls |
 | `#ba1a1a` / `#ffdad6` | Red — errors and warnings |
 
 ### Reserved (unused in both schemes)
@@ -59,57 +60,60 @@ they override theme colors on the playback screen.
 | ------- | ------ |
 | `#b493b8` / `#c9a9cd` | Mauve |
 | `#d0b483` / `#e0c79a` | Gold |
+| `#8fb3b3` / `#a3c7c7` | Teal |
 
 ## Role mapping
 
-The two schemes have distinct identities; each role is mapped per scheme.
+The two schemes share a blue lineage; each role is mapped per scheme.
 
 | Role | Night | Day |
 | ---- | ----- | --- |
-| `surface` | `#333344` | `#f7fbf2` |
+| `surface` | `#333344` | `#f7f9ff` |
 | `surfaceContainerLowest` | `#2a2a38` | `#ffffff` |
-| `surfaceContainerLow` | `#333344` | `#f1f5ec` |
-| `surfaceContainer` | `#3e3e52` ᵈ | `#ebefe7` |
-| `surfaceContainerHigh` | `#4a4a60` | `#e5e9e1` |
-| `surfaceContainerHighest` | `#55556a` | `#e0e4db` |
-| `surfaceVariant` | `#4a4a60` | `#dde5d9` |
-| `onSurface` | `#ffeeee` | `#181d18` |
-| `onSurfaceVariant` | `#c9c9d1` | `#424940` |
-| `outline` | `#83839c` ᵈ | `#727970` |
-| `outlineVariant` | `#4a4a60` | `#c1c9be` |
-| `primary` / `onPrimary` | `#aabbdd` / `#333344` | `#36693e` / `#ffffff` |
-| `primaryContainer` / `onPrimaryContainer` | `#c3cee6` / `#333344` | `#b7f1b9` / `#1d5128` |
-| `secondary` / `onSecondary` | `#aabbdd` / `#333344` | `#36693e` / `#ffffff` |
-| `secondaryContainer` / `onSecondaryContainer` | `#55556a` / `#ffeeee` | `#b8ccb5` / `#3a4b3a` |
-| `tertiary` / `onTertiary` | `#8fb08a` / `#333344` | `#39656c` / `#ffffff` |
-| `tertiaryContainer` / `onTertiaryContainer` | `#a3c49d` / `#333344` | `#bdeaf3` / `#1f4d54` |
+| `surfaceContainerLow` | `#333344` | `#f1f4f9` |
+| `surfaceContainer` | `#3e3e52` ᵈ | `#ebeef3` |
+| `surfaceContainerHigh` | `#4a4a60` | `#e5e8ed` |
+| `surfaceContainerHighest` | `#55556a` | `#e0e3e8` |
+| `surfaceVariant` | `#4a4a60` | `#dde3ea` |
+| `onSurface` | `#ffeeee` | `#181c20` |
+| `onSurfaceVariant` | `#c9c9d1` | `#41474d` |
+| `outline` | `#83839c` ᵈ | `#72787e` |
+| `outlineVariant` | `#4a4a60` | `#c1c7ce` |
+| `primary` / `onPrimary` | `#aabbdd` / `#333344` | `#28638a` / `#ffffff` |
+| `primaryContainer` / `onPrimaryContainer` | `#c3cee6` / `#333344` | `#cae6ff` / `#004b70` |
+| `secondary` / `onSecondary` | `#aabbdd` / `#333344` | `#28638a` / `#ffffff` |
+| `secondaryContainer` / `onSecondaryContainer` | `#55556a` / `#ffeeee` | `#b7c9d9` / `#384956` |
+| `tertiary` / `onTertiary` | `#8fb08a` / `#333344` | `#65587b` / `#ffffff` |
+| `tertiaryContainer` / `onTertiaryContainer` | `#a3c49d` / `#333344` | `#ebdcff` / `#4d4162` |
 | `error` / `onError` | `#c97a7e` / `#1c1c28` ᵈ | `#ba1a1a` / `#ffffff` |
 | `errorContainer` / `onErrorContainer` | `#d98f92` / `#333344` | `#ffdad6` / `#93000a` |
 
 ᵈ = derived tone in the night scheme; every other value is a palette value as-is. Two notes:
-`secondary`/`onSecondary` carry the **logo color** of each scheme (periwinkle at night, deep
-green by day) — the play-overlay triangle always matches the big logo and the mini-player
+`secondary`/`onSecondary` carry the **logo color** of each scheme (periwinkle at night, sea
+blue by day) — the play-overlay triangle always matches the big logo and the mini-player
 play button, and stays visible over its scheme's cover scrim. In the day scheme,
 `secondaryContainer` additionally sits one step deeper than the standard container tone so the
 search bar stays visible against header bands.
 
 ## Contrast (WCAG 2.2)
 
-Every text pairing in both schemes passes **AA** (4.5:1) or better; most pass **AAA** (7:1).
+Every text pairing in both schemes passes **AA** (4.5:1) or better; many pass **AAA** (7:1).
 
 | Pairing | Night | Day |
 | ------- | ----- | --- |
-| `onSurface` / `surface` | 11.02:1 | 16.32:1 |
-| `onSurfaceVariant` / `surface` | 7.52:1 | 8.87:1 |
-| `onSurface` / `surfaceContainerHighest` | 6.47:1 | 13.27:1 |
-| `onPrimary` / `primary` | 6.40:1 | 6.47:1 |
-| `onPrimaryContainer` / `primaryContainer` | 7.83:1 | 7.21:1 |
-| `onSecondary` / `secondary` | 6.40:1 | 6.47:1 |
-| `onSecondaryContainer` / `secondaryContainer` | 6.47:1 | 5.49:1 |
+| `onSurface` / `surface` | 11.02:1 | 16.27:1 |
+| `onSurfaceVariant` / `surface` | 7.52:1 | 8.93:1 |
+| `onSurface` / `surfaceContainerHighest` | 6.47:1 | 13.32:1 |
+| `onPrimary` / `primary` | 6.40:1 | 6.48:1 |
+| `onPrimaryContainer` / `primaryContainer` | 7.83:1 | 7.26:1 |
+| `onSecondary` / `secondary` | 6.40:1 | 6.48:1 |
+| `onSecondaryContainer` / `secondaryContainer` | 6.47:1 | 5.48:1 |
+| `onTertiary` / `tertiary` | 5.15:1 | 6.49:1 |
+| `onTertiaryContainer` / `tertiaryContainer` | 6.44:1 | 7.21:1 |
 | `onError` / `error` | 5.27:1 | 6.46:1 |
 | `onErrorContainer` / `errorContainer` | 4.89:1 | 7.24:1 |
 
-Functional borders (`outline`) meet the 3:1 non-text threshold (3.35:1 night, 4.28:1 day).
+Functional borders (`outline`) meet the 3:1 non-text threshold (3.35:1 night, 4.24:1 day).
 Deliberate exceptions: night borders on the highest containers sit at 2.0–2.8:1; the
 active-row highlight is intentionally quiet in both schemes (1.44 / 1.62:1) — the playing row
 is also identified by playback icons, never by color alone.
